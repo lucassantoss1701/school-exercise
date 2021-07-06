@@ -64,21 +64,3 @@ Content-Type: application/json
 ```
 
 O _status code_ de retorno deve ser [201 Created](https://httpstatusdogs.com/201-created).
-
-Não é necessário ter um corpo na resposta nem um cabeçalho `Location` por enquanto.
-
-Caso o usuário já esteja matriculado no curso, deve ser retornado um _status code_ [400 Bad Request](https://httpstatusdogs.com/400-bad-request).
-
-Alguns pontos importantes:
-
-- Não deixe de implementar validações. Pense em campos que devem ser obrigatórios e outros cenários de validação.
-- Implemente testes automatizados para essa funcionalidade. Baseie-se nos já implementados.
-- Seja consistente com o estilo de código que já existe no projeto.
-
-Caso tenha dificuldade, use como referência os posts sobre _Relationships_ do blog do Vlad Mihalcea:  https://vladmihalcea.com/tutorials/hibernate/
-
-Observação: **NÃO** é preciso implementar listagem, edição ou remoção de matrículas.
-
-### Bônus (não obrigatório): ampliar testes automatizados
-
-Caso você tenha tempo disponível, amplie os testes automatizados tanto para a funcionalidade que você implementou como para as que já estavam implementadas no projeto.
